@@ -1,0 +1,10 @@
+Create database hotel;
+use hotel;
+CREATE TABLE customers (
+    customer_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name TEXT,
+    phone TEXT,
+    email TEXT,
+    address TEXT,
+    room_id integer
+);

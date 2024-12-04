@@ -1,0 +1,14 @@
+Create database hotel;
+use hotel;
+CREATE TABLE bookings (
+    booking_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    room_id INTEGER,
+    customer_id INTEGER,
+    price_per_night REAL,
+    noOfDays int,
+    check_in_date date,
+    check_out_date date,
+    
+    FOREIGN KEY(room_id) REFERENCES rooms(room_id),
+    FOREIGN KEY(customer_id) REFERENCES customers(customer_id)
+);
