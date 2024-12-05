@@ -1,8 +1,0 @@
-Create database hotel;
-use hotel;
-CREATE TABLE rooms (
-    room_id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    room_type TEXT,
-    roomclass text,
-    availability TEXT
-);
