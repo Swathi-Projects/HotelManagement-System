@@ -1,0 +1,16 @@
+Description:
+
+	* This database is designed to store and manage information about hotel rooms and will be integrated with the Java application using JDBC connectivity. 
+	* It provides a secure and efficient way to maintain a separate record of room details, including availability and booking history. 
+	* This system ensures easy access to data, enabling smooth room management and booking operations in the future.
+
+Database query:
+
+Create database hotel;
+use hotel;
+CREATE TABLE rooms (
+    room_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    room_type TEXT,
+    roomclass text,
+    availability TEXT
+);

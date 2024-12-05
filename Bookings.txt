@@ -1,0 +1,22 @@
+Description:
+
+	* This database is designed to store and manage customer booking information and will be integrated with the Java application using JDBC connectivity.
+	* It enables the secure and organized maintenance of customer bookings as a separate entity, ensuring data safety and efficient management. 
+	* This system allows for quick and reliable retrieval of booking information whenever required, making it a valuable resource for future operations.
+
+Database query:
+	
+Create database hotel;
+use hotel;
+CREATE TABLE bookings (
+    booking_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    room_id INTEGER,
+    customer_id INTEGER,
+    price_per_night REAL,
+    noOfDays int,
+    check_in_date date,
+    check_out_date date,
+    
+    FOREIGN KEY(room_id) REFERENCES rooms(room_id),
+    FOREIGN KEY(customer_id) REFERENCES customers(customer_id)
+);

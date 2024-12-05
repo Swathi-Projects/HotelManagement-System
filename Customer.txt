@@ -1,0 +1,18 @@
+Description:
+
+	* This database is designed to store and manage customer information and will be seamlessly integrated with the Java application using JDBC connectivity. 
+	* It provides a secure and reliable way to maintain customer data separately, ensuring its safety and easy accessibility. 
+	* This setup will allow efficient data retrieval whenever needed, supporting future business operations effectively.
+
+Database query:
+
+Create database hotel;
+use hotel;
+CREATE TABLE customers (
+    customer_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name TEXT,
+    phone TEXT,
+    email TEXT,
+    address TEXT,
+    room_id integer
+);
